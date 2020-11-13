@@ -1,0 +1,7 @@
+helloobject=5-3.o
+hello:$(helloobject)
+	gcc -o hello $(helloobject)
+$(helloobject): 5-3.c  5-3.h
+	gcc -c 5-3.c  
+clean:
+	rm hello $(helloobject)

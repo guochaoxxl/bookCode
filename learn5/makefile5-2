@@ -1,0 +1,5 @@
+mytarget=test
+$(mytarget): 5-2.c 
+	gcc 5-2.c -o $(mytarget)
+clean:
+	rm  $(mytarget) 
